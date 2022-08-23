@@ -116,6 +116,17 @@ namespace HotLyric.Win32.Utils.MediaSessions.SMTC
                 supportLaunch: false,
                 defaultLrcProvider: "NeteaseMusic",
                 convertToSimpleChinese: false),
+
+            ["MusicPlayer2"] = new SMTCApp(
+                appId: "MusicPlayer2.exe",
+                packageFamilyNamePrefix: "MusicPlayer2.exe",
+                hasStoreUri: false,
+                positionMode: SMTCAppPositionMode.FromApp,
+                customName: "MusicPlayer2",
+                customAppIcon: new BitmapImage(new Uri("/Assets/MusicPlayer2Icon.png", UriKind.RelativeOrAbsolute)),
+                supportLaunch: false,
+                defaultLrcProvider: "NeteaseMusic",
+                convertToSimpleChinese: true),
         };
 
         public static IReadOnlyDictionary<string, SMTCApp> AllApps => allApps;
